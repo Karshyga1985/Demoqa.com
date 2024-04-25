@@ -2,8 +2,8 @@ package com.demoqa.step_definitions;
 
 import com.demoqa.utilities.ConfigurationReader;
 import com.demoqa.utilities.Driver;
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import io.cucumber.java.Scenario;
