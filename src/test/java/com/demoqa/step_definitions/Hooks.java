@@ -11,7 +11,7 @@ import io.cucumber.java.Scenario;
 import java.time.Duration;
 
 public class Hooks {
-    @Before(order = 1)
+    @Before
     public void setupMethod(){
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -26,11 +26,5 @@ public class Hooks {
 
         Driver.closeDriver();
     }
-    // db connection
-
-
-
-    //@BeforeStep
-
 
 }
