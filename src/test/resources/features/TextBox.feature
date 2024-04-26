@@ -1,4 +1,4 @@
-@wip
+
 Feature: Text Box form functionality
 
   Background:
