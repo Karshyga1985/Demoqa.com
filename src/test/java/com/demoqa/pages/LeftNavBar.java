@@ -5,6 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class LeftNavBar {
 
     public LeftNavBar(){
@@ -131,4 +135,16 @@ public class LeftNavBar {
 
     @FindBy (xpath = "//span[.='Book Store API']")
     public WebElement bookStoreApi;
+
+
+    public void navigateLeftNavElements(WebElement webElement){
+        List<WebElement> elementsOptions = new ArrayList<>(Arrays.asList(this.textBox, this.checkBox, this.radioBtn,
+                this.webTables, this.buttons, this.links, this.brokenLinks, this.uploadAndDownload, this.dynamicProperties));
+        for (WebElement eachElement : elementsOptions) {
+            if(eachElement.equals(webElement)){
+                eachElement.click();
+                break;
+            }
+        }
+    }
 }

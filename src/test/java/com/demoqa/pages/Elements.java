@@ -13,14 +13,14 @@ public class Elements {
     }
 
 
-    @FindBy(xpath = "(//h5)[1])")
+    @FindBy(xpath = "(//h5)[1]")
     public WebElement elementsBtn; // //div[@class='card-body']//h5[.='Elements']
 
     @FindBy(xpath = "//li[@class='btn btn-light active']/span[.='Check Box']")
     public WebElement checkBox;
 
-    @FindBy(className = "rct-collapse rct-collapse-btn")
-    public WebElement toggleBtn;
+//    @FindBy(className = "rct-collapse rct-collapse-btn")
+//    public WebElement toggleBtn;
 
     @FindBy(xpath = "(//button[@title='Toggle'])[3]")
     public WebElement toggleDocument;

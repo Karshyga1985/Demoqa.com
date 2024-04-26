@@ -38,12 +38,12 @@ public class BasePage {
     }
 
 
-    public List<WebElement> moduleWebelements = new ArrayList<>(Arrays.asList(elementsModule, formsModule, alertsModule,
-            widgetsModule, interactionsModule, bookStoreApplicationModule));
 
-    public static void navigateHomePageElements(WebElement webElement){
-        List<WebElement> homePageElements = new ArrayList<>();
-        for (WebElement eachElement : homePageElements) {
+
+    public void navigateHomePageElements(WebElement webElement){
+        List<WebElement> moduleWebelements = new ArrayList<>(Arrays.asList(this.elementsModule, this.formsModule, this.alertsModule,
+                this.widgetsModule, this.interactionsModule, this.bookStoreApplicationModule));
+        for (WebElement eachElement : moduleWebelements) {
             if(eachElement.equals(webElement)){
                 eachElement.click();
                 break;
