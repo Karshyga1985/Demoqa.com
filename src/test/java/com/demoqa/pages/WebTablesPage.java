@@ -20,16 +20,16 @@ public class WebTablesPage extends BasePage{
     @FindBy (id = "lastName-label")
     public WebElement formsLastNameHeader;
 
-    @FindBy (id = "firstName-label")
+    @FindBy (id = "userEmail-label")
     public WebElement formsEmailHeader;
 
-    @FindBy (id = "firstName-label")
+    @FindBy (id = "age-label")
     public WebElement formsAgeHeader;
 
-    @FindBy (id = "firstName-label")
+    @FindBy (id = "salary-label")
     public WebElement formsSalaryHeader;
 
-    @FindBy (id = "firstName-label")
+    @FindBy (id = "department-label")
     public WebElement formsDepartmentHeader;
 
     @FindBy (css = "button#submit")
@@ -56,8 +56,50 @@ public class WebTablesPage extends BasePage{
     @FindBy (css = "input#department")
     public WebElement formsDepartmentPlaceholder;
 
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[1] ")
+    public WebElement firstRowFirstName;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[2] ")
+    public WebElement firstRowLastName;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[3] ")
+    public WebElement firstRowAge;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[4] ")
+    public WebElement firstRowEmail;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[5] ")
+    public WebElement firstRowSalary;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[1]/div/div)[6] ")
+    public WebElement firstRowDepartment;
+
+    @FindBy (id = "edit-record-1")
+    public WebElement firstRowEditBtn;
+
+    @FindBy (id = "delete-record-1")
+    public WebElement firstRowDeleteBtn;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[1] ")
+    public WebElement forthRowFirstName;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[2] ")
+    public WebElement forthRowLastName;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[3] ")
+    public WebElement forthRowAge;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[4] ")
+    public WebElement forthRowEmail;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[5] ")
+    public WebElement forthRowSalary;
+
+    @FindBy (xpath = "((//div[@class='rt-tr-group'])[4]/div/div)[6] ")
+    public WebElement forthRowDepartment;
+
     @FindBy (id = "searchBox")
-    public WebElement searchBar;
+    public WebElement searchBox;
 
     @FindBy (xpath = "(//div[@class='rt-resizable-header-content'])[1]")
     public WebElement tableFirstNameHeader;

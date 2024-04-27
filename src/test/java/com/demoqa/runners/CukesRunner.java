@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",// path from content root
         glue = "com/demoqa/step_definitions",// path from source root
-        dryRun = false,
+        dryRun = true,
         tags = "@wip",
         publish = true //generating a report with public link
 )

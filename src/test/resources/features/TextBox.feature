@@ -1,4 +1,4 @@
-
+@smoke @regression
 Feature: Text Box form functionality
 
   Background:
