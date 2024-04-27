@@ -11,8 +11,6 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "json:target/cucumber.json"
-
-
         },
         features = "src/test/resources/features",// path from content root
         glue = "com/demoqa/step_definitions",// path from source root
