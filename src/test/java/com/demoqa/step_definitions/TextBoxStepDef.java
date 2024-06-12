@@ -81,7 +81,6 @@ public class TextBoxStepDef {
 
     @Then("User should see the output result")
     public void userShouldSeeTheOutputResult() {
-
         BrowserUtils.verifyElementDisplayed(textBoxPage.output);
     }
 }
