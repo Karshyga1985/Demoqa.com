@@ -1,4 +1,4 @@
-Feature: As a User I am able to use check box
+Feature: As a User I am able to use check box and Radio button
 
   Scenario:
     Given User clicks "Elements" button
